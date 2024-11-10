@@ -11,15 +11,15 @@ function HeroSection() {
   return (
     <>
       <section className='bg-[#0a0908] w-full text-center pt-[7.5rem]'>
-        <p className='text-[2rem]'>Hey! I'm <span className='text-[#A9927D]'>Taha Ahmed</span></p>
+        <p className='text-[2rem]'>Hey! I'm <span className='text-pink-500'>Nida Nazar</span></p>
 
-        <p className='text-[2rem]'><span className='text-[#A9927D]'>I</span>'m <span className='text-[#A9927D]'>A F</span>ront <span className='text-[#A9927D]'>E</span>nd <span className='text-[#A9927D]'>W</span>eb <span className='text-[#A9927D]'>D</span>eveloper</p>
+        <p className='text-[2rem]'><span className='text-[#7da984]'>I</span>'m <span className='text-[#7da984]'>A F</span>ront <span className='text-[#7da984]'>E</span>nd <span className='text-[#7da984]'>W</span>eb <span className='text-[#7da984]'>D</span>eveloper</p>
 
-        <p className='mt-[1.25rem] mb-[2rem] text-[1.125rem] '>I can build user interface for web sites and applications with <span className='text-[#A9927D]'>React JS</span> and <span className='text-[#A9927D]'>Next.Js</span><br />I love the front end development.</p>
+        <p className='mt-[1.25rem] mb-[2rem] text-[1.125rem] '>I can build user interface for web sites and applications with <span className='text-[#7da984]'>React JS</span> and <span className='text-[#7da984]'>Next.Js</span><br />I love the front end development.</p>
 
         <Button textName={"Hire Me"}/>
 
-        <div className='mt-[3.125rem] m-auto sm:w-[60%] lg:w-[30%] lg:px-[1.5rem] py-1 flex gap-[3.125rem] justify-center items-center lg:h-[52px] bg-[#A9927D] rounded-full'>
+        <div className='mt-[3.125rem] m-auto sm:w-[60%] lg:w-[30%] lg:px-[1.5rem] py-1 flex gap-[3.125rem] justify-center items-center lg:h-[52px] bg-[#7da984] rounded-full'>
           <FaFacebookF  size={30} color='black' className='cursor-pointer'/>
           <FaXTwitter size={30} color='black' className='cursor-pointer'/>
           <FaInstagram size={30} color='black' className='cursor-pointer'/>

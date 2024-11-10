@@ -9,7 +9,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="text-[white] selection:bg-[#A9927D] selection:text-black">
+    <div className="text-[white] selection:bg-[#7da984] selection:text-black">
       <Navbar/>
       <HeroSection/>
       <AboutSection/>

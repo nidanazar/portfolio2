@@ -8,10 +8,10 @@ function Testimonials() {
       <div className="text-white text-center">
         <h4 className="text-white text-4xl lg:text-5xl font-[Caveat] ">
           <span>
-            <span className="text-[#a9927d]">W</span>hat{' '}
-            <span className="text-[#a9927d]">O</span>ther{' '}
-            <span className="text-[#a9927d]">P</span>eople{' '}
-            <span className="text-[#a9927d]">S</span>ay
+            <span className="text-[#7da984]">W</span>hat{' '}
+            <span className="text-[#7da984]">O</span>ther{' '}
+            <span className="text-[#7da984]">P</span>eople{' '}
+            <span className="text-[#7da984]">S</span>ay
           </span>
         </h4>
 
@@ -37,7 +37,7 @@ function Testimonials() {
                   />
                 </div>
                 <p className="mt-4">{person.title}</p>
-                <p className="my-4 text-[#a9927d]">{person.role}</p>
+                <p className="my-4 text-[#7da984]">{person.role}</p>
                 <p className="w-[95%] md:w-[97%] mx-auto mb-6 leading-7 text-center">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, dolorum odio magni possimus corrupti molestiae labore voluptatum ut autem
                 </p>
