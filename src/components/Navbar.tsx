@@ -4,8 +4,6 @@ import { caveat } from '@/font'
 import Link from 'next/link'
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-import { motion, AnimatePresence } from "framer-motion"
-
 function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -21,14 +19,8 @@ function Navbar() {
             <Link href='/'><p className={`${caveat.className} text-[1.875rem] font-semibold text-white`} ><span className='text-[#A9927D]'>T</span>aha <span className='text-[#A9927D]'>A</span>hmed</p></Link>
           </div>
 
-          <AnimatePresence>
           {isOpen == true ? (
-            <motion.div  
-              key={"menu"}
-              initial={{ opacity: 0, y: -200, height: 0, width: 0 }}
-              animate={{ opacity: 1, y: 0, height: "100vh", width: "100%" }}
-              exit={{ opacity: 0, y: -200, height: 0, width: 0 }}
-              transition={{ duration: 0.1 }}>
+            <div>
               <ul className='absolute p-[40px] top-0 left-0 w-full h-screen bg-[#a9927d] flex flex-col items-center justify-center gap-[1.875rem]'>
                 <IoClose className='absolute top-0 right-0 mr-[40px] mt-[30px] cursor-pointer' size={35} onClick={ShowOption} />
                 <Link href='/'><li className='text-[1.125rem] text-[black] font-semibold tracking-[.0563rem] hover:text-[#7d674c]'>Home</li></Link>
@@ -38,7 +30,7 @@ function Navbar() {
                 <Link href='#testimonials'><li className='text-[1.125rem] text-[black] font-semibold tracking-[.0563rem] hover:text-[#7d674c]'>Testimonials</li></Link>
                 <Link href='#contact'><li className='text-[1.125rem] text-[black] font-semibold tracking-[.0563rem] hover:text-[#7d674c]'>Contact</li></Link>
               </ul>
-            </motion.div>
+            </div>
 
           ) : (
             <ul className='hidden lg:h-full lg:flex lg:items-center lg:gap-[1.875rem] '>
@@ -50,7 +42,6 @@ function Navbar() {
               <Link href='#contact'><li className='text-[1.125rem] text-[white] tracking-[.0563rem] hover:text-[#A9927D]'>Contact</li></Link>
             </ul>
           )}
-          </AnimatePresence>
 
           <IoMenu size={35} color='white' className='lg:hidden cursor-pointer' onClick={ShowOption} />
 
